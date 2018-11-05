@@ -15,6 +15,7 @@
 			<visible>Player.Caching + !Window.IsVisible(busydialog)</visible>
 			<include content="BusySpinner">
 				<param name="colordiffuse" value="white"/>
+				<param name="id" value="99"/>
 			</include>
 		</control>
 		<!-- Numeric Input -->
