@@ -6,13 +6,6 @@
 		<definition>
 			<content>
 				<item>
-					<label>$LOCALIZE[1024]</label>
-					<icon>items/genrefolder.png</icon>
-					<onclick>ActivateWindow(videos,$PARAM[content],return)</onclick>
-					<property name="IsFolder">true</property>
-					<visible>Window.Is(1114) + !String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(1).Label) + !Container($PARAM[id]).IsUpdating</visible>
-				</item>
-				<item>
 					<label>$PARAM[dummylabel]</label>
 					<label2>$PARAM[dummylabel2]</label2>
 					<icon>$PARAM[dummyicon]</icon>
@@ -27,6 +20,13 @@
 					<onclick>noop</onclick>
 					<property name="IsLoading">true</property>
 					<visible>Container($PARAM[id]).IsUpdating + String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(1).Label) + ![$PARAM[showdummy]]</visible>
+				</item>
+				<item>
+					<label>$LOCALIZE[1024]</label>
+					<icon>items/genrefolder.png</icon>
+					<onclick>ActivateWindow(videos,$PARAM[content],return)</onclick>
+					<property name="IsFolder">true</property>
+					<visible>Window.Is(1114)</visible>
 				</item>
 			</content>
 			<content target="$PARAM[widget_target]" sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" limit="$PARAM[limit]">$PARAM[content]</content>

@@ -20,7 +20,7 @@
 		<!-- busy spinner -->
 		<include content="CustomBusySpinner">
 			<param name="diffuse" value="false"/>
-			<param name="visible" value="Container(2000).IsUpdating | Container(102).IsUpdating"/>
+			<param name="visible" value="Container(2000).IsUpdating"/>
 		</include>
 		<!-- side panel -->
 		<include content="SidePanel">
