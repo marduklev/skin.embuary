@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1114">
-	<defaultcontrol always="true">10</defaultcontrol>
+	<defaultcontrol always="true">101</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<menucontrol>6666</menucontrol>
+	<onload>Control.Move(10,-1)</onload>
+	<onload>Control.Move(10,1)</onload>
 	<include content="PropertyIncludes">
 		<param name="ShowHeader" value="true"/>
 	</include>
@@ -19,8 +21,9 @@
 		</include>
 		<!-- busy spinner -->
 		<include content="CustomBusySpinner">
+			<param name="delay" value="true"/>
 			<param name="diffuse" value="false"/>
-			<param name="visible" value="Container(2000).IsUpdating"/>
+			<param name="visible" value="Container(2000).IsUpdating | Container(101).IsUpdating | Container(102).IsUpdating"/>
 		</include>
 		<!-- side panel -->
 		<include content="SidePanel">

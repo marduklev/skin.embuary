@@ -11,22 +11,27 @@
 					<icon>$PARAM[dummyicon]</icon>
 					<onclick>$PARAM[dummyaction]</onclick>
 					<property name="IsFolder">true</property>
-					<property name="IsDummy">true</property>
+					<property name="IsStatic">true</property>
 					<visible>String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(1).Label) + [$PARAM[showdummy]]</visible>
-				</item>
-				<item>
-					<label>$LOCALIZE[20186]</label>
-					<icon/>
-					<onclick>noop</onclick>
-					<property name="IsLoading">true</property>
-					<visible>Container($PARAM[id]).IsUpdating + String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(1).Label) + ![$PARAM[showdummy]]</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[1024]</label>
 					<icon>items/genrefolder.png</icon>
 					<onclick>ActivateWindow(videos,$PARAM[content],return)</onclick>
 					<property name="IsFolder">true</property>
+					<property name="IsStatic">true</property>
 					<visible>Window.Is(1114)</visible>
+				</item>
+				<item>
+					<label>$LOCALIZE[20186]</label>
+					<icon/>
+					<onclick>noop</onclick>
+					<property name="IsLoading">true</property>
+					<visible>Container($PARAM[id]).IsUpdating + ![$PARAM[showdummy]]</visible>
+					<visible>
+						[String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(1).Label) + String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(0).Property(IsStatic))]
+						| [String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(2).Label) + !String.IsEmpty(Container($PARAM[id]).ListItemAbsolute(0).Property(IsStatic))]
+					</visible>
 				</item>
 			</content>
 			<content target="$PARAM[widget_target]" sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" limit="$PARAM[limit]">$PARAM[content]</content>
@@ -50,8 +55,10 @@
 	<include name="CustomBusySpinner">
 		<param name="visible">Container.IsUpdating</param>
 		<param name="diffuse">true</param>
+		<param name="delay">false</param>
 		<definition>
 			<control type="group">
+				<animation effect="fade" start="100" end="0" time="200" delay="100" condition="$PARAM[delay]">Hidden</animation>
 				<visible>$PARAM[visible]</visible>
 				<include condition="$PARAM[diffuse]" content="DiffuseMask"/>
 				<include condition="!$PARAM[diffuse]" content="PlainBackground"/>
