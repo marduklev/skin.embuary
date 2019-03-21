@@ -125,7 +125,7 @@
 						<height>58</height>
 						<width>71</width>
 						<bordersize>18</bordersize>
-						<texture>icons/misc/notification.png</texture>
+						<texture>special://home/addons/plugin.video.emby/icon.png</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<colordiffuse>$VAR[AccentColor]</colordiffuse>
 						<visible>!String.IsEmpty(Window(Home).Property(emby_sync))</visible>
@@ -526,7 +526,7 @@
 				<param name="align" value="false"/>
 			</include>
 			<onclick>ActivateWindow(playercontrols)</onclick>
-			<visible>Player.HasMedia + !Player.HasGame</visible>
+			<visible>[Player.HasMedia + !Player.HasGame] | System.HasMediaAudioCD | System.HasMediaDVD</visible>
 		</control>
 		<control type="button" id="6612">
 			<font>Material24</font>
