@@ -75,6 +75,13 @@
 		]
 	</expression>
 
+	<include name="CheckTVShowTrailer">
+		<control type="button">
+			<visible>false</visible>
+			<onfocus condition="!String.IsEmpty(Window(home).Property(trailer_avail))">ClearProperty(trailer_avail,home)</onfocus>
+			<onfocus>RunScript(script.video.checktvtrailer)</onfocus>
+		</control>
+	</include>	   
 	<!-- Views -->
 	<expression name="WideViewVisible">[
 		[

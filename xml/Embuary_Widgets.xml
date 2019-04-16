@@ -392,6 +392,7 @@
 							<include content="SetPropertyOnFocus">
 								<param name="id" value="$PARAM[id]"/>
 							</include>
+							<include>CheckTVShowTrailer</include>
 							<control type="group">
 								<left>70</left>
 								<top>64</top>

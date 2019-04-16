@@ -85,11 +85,12 @@
 								<onback>SetFocus(50)</onback>
 							</control>
 							<control type="button" id="56104">
-								<visible>!String.IsEmpty(ListItem.Trailer)</visible>
+								<visible>!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(home).Property(trailer_avail))</visible>
 								<include>LightGreyButton</include>
 								<label>$LOCALIZE[20410]</label>
 								<onup>SetFocus(6666)</onup>
-								<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+								<onclick condition="String.IsEmpty(Window(home).Property(trailer_avail)) + !String.IsEmpty(ListItem.Trailer)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+								<onclick condition="!String.IsEmpty(Window(home).Property(trailer_avail))">PlayMedia($INFO[listitem.path]$INFO[ListItem.FolderName,,-trailer.mp4])</onclick>
 								<ondown>50</ondown>
 								<onback>SetFocus(50)</onback>
 							</control>
