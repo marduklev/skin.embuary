@@ -1061,6 +1061,17 @@
 							+ !String.EndsWith(ListItem.Art(thumb),folder.jpg)
 						</visible>
 					</control>
+					<!-- Mod Clearlogo overlay thumbs -->
+					<control type="image">
+						<width>300</width>
+						<height>100</height>
+						<bottom>10</bottom>
+						<texture background="true">$VAR[ListItemClearlogo]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+						<visible>!Window.IsVisible(script-NextAired-TVGuide.xml)</visible>
+						<visible>!Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
+						<visible>[String.IsEqual(ListItem.DBType,episode) | Container.Content(episodes)] | ![String.IsEqual(ListItem.DBType,episode) | Container.Content(episodes)] + String.IsEmpty(ListItem.Art(landscape)</visible>
+					</control>
 					<control type="image">
 						<width>430</width>
 						<height>242</height>
