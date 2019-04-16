@@ -66,8 +66,8 @@
 					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
-			<control type="textbox">
-				<bottom>-96</bottom>
+			<control type="textbox" id="6">
+				<bottom>0</bottom>
 				<left>500</left>
 				<right>100</right>
 				<height>76</height>

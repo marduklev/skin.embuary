@@ -1692,3 +1692,38 @@ msgstr ""
 msgctxt "#31334"
 msgid "More available items with"
 msgstr ""
+
+#: /xml/PlayerControls.xml
+msgctxt "#31335"
+msgid "Eject disc"
+msgstr ""
+
+#: /xml/Embuary_SkinSettings.xml
+msgctxt "#31336"
+msgid "Show EPG thumb instead of the channel logo in the video OSD for live TV"
+msgstr ""
+
+#: /xml/Embuary_Settings.xml
+msgctxt "#31337"
+msgid "Upload Kodi log"
+msgstr ""
+
+#: /xml/Embuary_Settings.xml
+msgctxt "#31338"
+msgid "Running services"
+msgstr ""
+
+#: /xml/MusicOSD.xml
+msgctxt "#31339"
+msgid "Pan and zoom"
+msgstr ""
+
+#: /xml/Embuary_SkinSettings.xml
+msgctxt "#31340"
+msgid "Use available hubs as target"
+msgstr ""
+
+#: /xml/Embuary_SkinSettings.xml
+msgctxt "#31341"
+msgid "EPG thumbnail aspect ratio"
+msgstr ""

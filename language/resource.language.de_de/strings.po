@@ -1094,7 +1094,7 @@ msgstr "Eigene Menügrafiken setzen"
 #: /xml/Embuary_Includes.xml
 msgctxt "#31206"
 msgid "Thumbnail options"
-msgstr "Thumbnail Optionen"
+msgstr "Vorschaubilder-Optionen"
 
 #: /xml/Custom_1112_MainMenuReset.xml
 msgctxt "#31207"
@@ -1218,7 +1218,7 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#31230"
 msgid "Hide thumbnails of unwatched episodes"
-msgstr "Blende Thumbnails von ungesehenen Episoden aus"
+msgstr "Blende Vorschaubilder von ungesehenen Episoden aus"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31231"
@@ -1608,7 +1608,7 @@ msgstr "Keine Farbe gesetzt"
 #: /xml/script-skinshortcuts.xml
 msgctxt "#31306"
 msgid "Replace default thumbnail"
-msgstr "Standard Thumbnail ersetzen"
+msgstr "Standard-Vorschaubild ersetzen"
 
 #: /xml/Embuary_Variables.xml
 msgctxt "#31307"
@@ -1618,7 +1618,7 @@ msgstr "Mehr Specials"
 #: /xml/script-skinshortcuts.xml
 msgctxt "#31308"
 msgid "Thumbnail aspect ratio"
-msgstr "Thumbnail Seitenverhältnis "
+msgstr "Seitenverhältnis der Vorschaubilder"
 
 #: /xml/Embuary_Variables.xml
 msgctxt "#31309"
@@ -1671,7 +1671,7 @@ msgstr "Willst du sie wirklich deaktivieren?"
 #: /xml/SkinSettings.xml
 msgctxt "#31317"
 msgid "Enable channel labeling for EPG thumbnails"
-msgstr "Zeige Kanalbeschriftungen auf EPG Thumbnails"
+msgstr "Zeige Kanalbeschriftungen auf EPG-Vorschaubildern"
 
 #: /xml/script-script.extendedinfo-DialogVideoInfo.xml
 msgctxt "#31318"
@@ -1762,3 +1762,39 @@ msgstr "Zeige YouTube-Suchergebnisse"
 msgctxt "#31334"
 msgid "More available items with"
 msgstr "Mehr verfügbare Titel mit"
+
+#: /xml/PlayerControls.xml
+msgctxt "#31335"
+msgid "Eject disc"
+msgstr "Disc auswerfen"
+
+#: /xml/Embuary_SkinSettings.xml
+msgctxt "#31336"
+msgid ""
+"Show EPG thumb instead of the channel logo in the video OSD for live TV"
+msgstr "Zeige EPG-Vorschaubild anstelle des Senderlogos im OSD für Live TV"
+
+#: /xml/Embuary_Settings.xml
+msgctxt "#31337"
+msgid "Upload Kodi log"
+msgstr "Upload Kodi Log"
+
+#: /xml/Embuary_Settings.xml
+msgctxt "#31338"
+msgid "Running services"
+msgstr "Laufende Dienste"
+
+#: /xml/MusicOSD.xml
+msgctxt "#31339"
+msgid "Pan and zoom"
+msgstr "Schwenken und zoomen"
+
+#: /xml/Embuary_SkinSettings.xml
+msgctxt "#31340"
+msgid "Use available hubs as target"
+msgstr "Nutze und öffne verfügbare Hubs"
+
+#: /xml/Embuary_SkinSettings.xml
+msgctxt "#31341"
+msgid "EPG thumbnail aspect ratio"
+msgstr "Seitenverhältnis der EPG-Vorschaubilder"
