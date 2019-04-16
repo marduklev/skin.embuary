@@ -57,7 +57,6 @@
 				<visible>Control.IsVisible(450)</visible>
 				<animation effect="slide" start="0,0" end="150,0" condition="true">Conditional</animation>
 				<width>800</width>
-				<visible>Control.IsVisible(450)</visible>
 				<height>470</height>
 				<control type="image">
 					<height>470</height>
@@ -67,10 +66,9 @@
 				<control type="list" id="450">
 					<top>10</top>
 					<height>450</height>
-					<onup>12</onup>
 					<onleft>100</onleft>
-					<onright>100</onright>
-					<ondown>100</ondown>
+					<onright condition="Integer.IsGreater(Container(450).NumItems,9)">60</onright>
+					<onright condition="!Integer.IsGreater(Container(450).NumItems,9)">100</onright>
 					<pagecontrol>60</pagecontrol>
 					<itemlayout height="50" width="800">
 						<control type="image">
@@ -122,10 +120,13 @@
 					<top>0</top>
 					<bottom>0</bottom>
 					<width>4</width>
+					<onleft>450</onleft>
+					<onright>100</onright>
 					<orientation>vertical</orientation>
 					<showonepage>false</showonepage>
 					<texturesliderbackground colordiffuse="00ffffff">common/white.jpg</texturesliderbackground>
 					<texturesliderbar colordiffuse="scrollbar_slider">common/white.jpg</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="$VAR[AccentColor]">common/white.jpg</texturesliderbarfocus>
 				</control>
 			</control>
 			<!-- list thumbs -->
