@@ -1217,6 +1217,23 @@
 				<selected>Control.IsVisible(59) + [!Skin.HasSetting(ViewEpisodeToggle) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(tvchannels)]</selected>
 				<visible>$EXP[EpisodeViewVisible] | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(tvchannels)</visible>
 			</control>
+			<!-- mod new view Type I panel -->
+			<control type="radiobutton" id="$PARAM[id]17">
+				<include content="ContextButton"/>
+				<label>new view type 1 </label>
+				<onclick>Container.SetViewMode(501)</onclick>
+				<selected>Control.IsVisible(501)</selected>
+				<visible>$EXP[PosterViewVisible]</visible>
+			</control>
+			<!-- mod new view Type II slide - set view 
+			<control type="radiobutton" id="$PARAM[id]18">
+				<include content="ContextButton"/>
+				<label>new view type 2 </label>
+				<onclick>Container.SetViewMode(502)</onclick>
+				<selected>Control.IsVisible(502)</selected>
+				<visible>$EXP[PosterViewVisible]</visible>
+			</control>
+			-->
 		</definition>
 	</include>
 	<include name="ScrollTime">
