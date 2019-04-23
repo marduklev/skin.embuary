@@ -269,7 +269,6 @@
 							<visible>!String.IsEmpty(Window(home).Property(trailer_avail))</visible>
 							<include>LightGreyButton</include>
 							<label>$LOCALIZE[20410]</label>
-							<!-- <onclick>PlayMedia($INFO[listitem.path]$INFO[ListItem.FolderName,,-trailer.mp4])</onclick> -->
 							<onclick>PlayMedia($INFO[ListItem.Filenameandpath]$INFO[ListItem.TvShowTitle,,-trailer.mp4])</onclick>
 							<ondown>200</ondown>
 						</control>
